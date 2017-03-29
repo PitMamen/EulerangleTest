@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     private void calculateOrientation() {
         float[] values = new float[3];
         float[] R = new float[9];
-        SensorManager.getRotationMatrix(R,null,acessvalues,magneticvalues);
+        SensorManager.getRotationMatrix(R,null,acessvalues,magneticvalues);   //计算倾斜矩阵 以及 旋转矩阵
         SensorManager.getOrientation(R,values);
 
 
